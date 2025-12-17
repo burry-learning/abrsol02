@@ -1,0 +1,89 @@
+# ============================================================================
+# Core Dependencies - Solana Arbitrage Bot
+# ============================================================================
+
+# Async HTTP client (pour les requêtes API)
+aiohttp>=3.9.0
+
+# Telegram bot integration
+python-telegram-bot[aio]>=20.6
+
+# Environment variables management
+python-dotenv>=1.0.0
+
+# Web UI avec FastAPI
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Event loop performance (Linux/Mac uniquement, optionnel sur Windows)
+uvloop>=0.19.0; sys_platform != 'win32'
+
+# ============================================================================
+# Solana Dependencies (optionnel mais recommandé pour production)
+# ============================================================================
+
+# SDK Solana Python (pour interactions on-chain directes)
+# solana>=0.30.0
+# anchorpy>=0.18.0
+
+# Alternative: solders (binding Rust, plus performant)
+# solders>=0.18.0
+
+# ============================================================================
+# Data Processing & Analysis
+# ============================================================================
+
+# JSON processing
+orjson>=3.9.0
+
+# Date/time handling
+python-dateutil>=2.8.2
+
+# ============================================================================
+# Development & Testing
+# ============================================================================
+
+# Testing framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Code quality
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# ============================================================================
+# Monitoring & Logging
+# ============================================================================
+
+# Structured logging
+structlog>=23.1.0
+
+# Performance monitoring (optionnel)
+# prometheus-client>=0.18.0
+
+# ============================================================================
+# Security
+# ============================================================================
+
+# Cryptography (pour signatures Solana si nécessaire)
+# cryptography>=41.0.0
+# pynacl>=1.5.0
+
+# ============================================================================
+# Notes d'installation:
+# ============================================================================
+# 
+# Installation basique:
+#   pip install -r requirements.txt
+#
+# Installation pour développement:
+#   pip install -r requirements.txt
+#
+# Si problème avec uvloop sur Windows:
+#   pip install -r requirements.txt --no-deps
+#   pip install aiohttp python-telegram-bot python-dotenv fastapi uvicorn
+#
+# Pour production avec support on-chain complet:
+#   Décommenter les lignes solana/anchorpy/solders
+# ============================================================================
