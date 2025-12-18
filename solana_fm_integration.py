@@ -25,10 +25,10 @@ SOLANA_FM_BASE_URL = "https://api.solana.fm/v0"
 
 # Limites de rate (100 req/min)
 RATE_LIMIT_REQUESTS = 100
-RATE_LIMIT_WINDOW = 60  # secondes
+RATE_LIMIT_WINDOW = 4 # secondes
 
 # Seuils de slippage (en décimal)
-HIGH_SLIPPAGE_THRESHOLD = 0.02  # 2%
+HIGH_SLIPPAGE_THRESHOLD = 0.001
 CRITICAL_SLIPPAGE_THRESHOLD = 0.05  # 5%
 
 # Cache pour éviter trop de requêtes
