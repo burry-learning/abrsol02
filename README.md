@@ -114,7 +114,7 @@ python main.py
 ```
 
 Le bot va :
-1. Démarrer l'interface web sur http://localhost:8000
+1. Démarrer l'interface web sur
 2. Se connecter à Telegram
 3. Commencer à scanner les tokens toutes les 60 secondes
 4. Envoyer des alertes quand des opportunités sont détectées
