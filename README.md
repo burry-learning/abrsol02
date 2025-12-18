@@ -155,7 +155,7 @@ python api.py
 
 
 
-**Pour plus de détails, consultez la documentation Swagger :** http://localhost:8001/docs
+**Pour plus de détails, consultez la documentation Swagger 
 
 ## 🧪 Tests
 
